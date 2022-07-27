@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Marks</title>
+</head>
+<body>
+<h1> Student Marks</h1>
+
+<h3> Quiz Marks</h3>
+<table >
+    {% for key,val in params_quiz.items %}
+    <tr>
+        <td> {{ key }} : {{ val }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+
+<h3> Assignment Marks</h3>
+<table>
+    {% for key,val in params_ass.items %}
+    <tr>
+        <td> {{ key }} : {{ val }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+
+<h3> Exam Marks</h3>
+<table>
+    {% for key,val in params_exam.items %}
+    <tr>
+        <td> {{ key }} : {{ val }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+
+<strong><h3> CGPA </h3></strong>
+<table>
+    <tr>
+        <td> {{ params_cgpa }}</td>
+        </tr>
+</table>
+
+<br>
+<a href= javascript:history.back()> <button> back </button></a>
+
+</body>
+</html>

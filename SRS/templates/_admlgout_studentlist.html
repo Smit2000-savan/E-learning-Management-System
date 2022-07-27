@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student List</title>
+</head>
+<body>
+<h1>All Student List</h1>
+
+<table>
+
+    {% for id,fn in data.items %}
+      <tr>
+        <td> {{ id }} : {{ fn }} </td>
+      </tr>
+    {% endfor %}
+        <br>
+</table>
+
+<br> <a href="javascript:history.back()"> <button> back </button></a>
+<br>
+<br> <a href="/"> <button> Log Out </button></a>
+
+
+</body>
+</html>

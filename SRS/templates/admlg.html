@@ -1,0 +1,24 @@
+{% extends "basic.html" %}
+
+{% block title %}Admin Login {% endblock %}
+
+{% block main_content %}
+    <h1> Admin Login </h1>
+
+    <form action='/administrator/admlgout'  method='post'>
+    {% csrf_token %}
+
+    Enter Username : <br>
+    <input type="text" name="usr" value="202001001"> <br>
+    Enter Password : <br>
+    <input type="password" name="psw" value="Matthew.Clarke"><br>
+    <br>
+    <button type='submit'> Login </button>
+    </form>
+    <br>
+    {{ notc_a }}
+    <br>
+    <br>
+    <a href="http://127.0.0.1:8000/"> <button> Home </button> </a>
+
+{% endblock %}

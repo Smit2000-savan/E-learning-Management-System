@@ -1,0 +1,23 @@
+{% extends "basic.html" %}
+
+{% block title %}Professor Login{% endblock %}
+
+{% block main_content %}
+    <h1> Professor Login </h1>
+    <form action='/professor/proflgout'  method='post'>
+        {% csrf_token %}
+
+        Enter Username : <br>
+        <input type="text" name="usr" value="201501001"> <br>
+        Enter Password : <br>
+        <input type="password" name="psw" value="Mary.Morgan"><br>
+        <br>
+        <button type='submit'> Login </button>
+    </form>
+    <br>
+    {{ notc_p }}
+    <br>
+    <br>
+     <a href="http://127.0.0.1:8000/"> <button> Home </button> </a>
+
+{% endblock %}

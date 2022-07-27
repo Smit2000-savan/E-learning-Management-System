@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Login Details</title>
+</head>
+<body>
+<h1>Student Login Details</h1>
+<br>
+{{ notc_s }}
+
+<script>
+    var sid={{ id }}
+</script>
+
+Student ID - {{ id }}<br>
+Name - {{ name }}<br><br>
+Email ID - {{ email }}<br><br>
+Phone Number - {{ phn }}<br>
+
+<br>
+ <a href="http://127.0.0.1:8000/student/_stdlgout_registeredcourse" onclick="location.href=this.href + '?usr=' +sid;return false;">
+     <button> Registered Courses </button>  </a>
+<br>
+<br>
+<a href="http://127.0.0.1:8000/student/_stdlgout_marks" onclick="location.href=this.href + '?usr=' +sid;return false;">
+     <button> Marks </button>  </a>
+<br>
+
+<br>
+<br>
+ <a href="/"> <button> Logout </button> </a>
+
+
+
+</body>
+</html>
